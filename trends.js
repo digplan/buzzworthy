@@ -1,12 +1,7 @@
 
 module.exports = function(cb){
 var Twit = require('twit');
-var auth = {
-    "consumer_key": "CieWj2i6spcw5zNgtk9Rkg",
-    "consumer_secret": "f2Tow4oOUjH775gcLzQmJh8e8kpBC6Ki5UFrjcHvg",
-    "access_token": "474112518-6hmMFkaPN1GOsrMfpNj1lITF4dSD4VrIttKHQ8Gc",
-    "access_token_secret": "0fnPO4xdADb9XKZPsO1eWJG8WWKfDdTs7GW4YYZHiFI"
-}
+var auth = {}
 var T = new Twit(auth);
 var stream = T.stream('statuses/filter', { track: ['a,e,i,o,u,r,s,t,c,b,g,z,y']});
 

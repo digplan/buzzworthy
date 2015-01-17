@@ -1,0 +1,1 @@
+render({"time": new Date()})
